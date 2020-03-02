@@ -11,8 +11,11 @@ http://jonathansoma.com/lede/foundations-2017/classes/more-scraping/selenium/
 ## Start the local proxy
 Enter the following command:
 ```
-$ mitmdump --mode upstream:10.224.41.171:8080 --set upstream_cert=false --sl-insecure --scripts proxy_setup.py
+$ mitmdump --mode upstream:10.224.41.171:8080 --set upstream_cert=false --ssl-insecure --scripts proxy_setup.py
+
 ```
+Note: You might need to install mysql for python, using:
+pip3 install mysql
 
 ## Installing the proxy certificate
 To connect to the proxy, you should do the following:
